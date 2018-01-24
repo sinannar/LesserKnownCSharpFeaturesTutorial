@@ -21,6 +21,7 @@ namespace CallerInfoExample
 
         private static void Log(string message)
         {
+            //you see this messages on output windows. if not, right click on that window and chech 'Program Output'
             Debug.WriteLine(message);
         }
     }
