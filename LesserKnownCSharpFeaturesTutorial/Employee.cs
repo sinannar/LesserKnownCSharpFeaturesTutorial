@@ -24,7 +24,9 @@ namespace LesserKnownCSharpFeaturesTutorial
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public string Surname { get; set; }
 
-        [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
         public string Department { get; set; }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
+        public List<string> Reportees { get; set; }
     }
 }
