@@ -19,6 +19,12 @@ namespace CallerInfoExample
               $"[Source Line Number]: {sourceLineNumber}; [Caller Member Name]: {callerMemberName}; ");
         }
 
+        [Obsolete("This method is will be removed in the future. Use Log(string message) instead.")]
+        public static void Log(string message, string callerMemberName)
+        {
+            Log($"[Message]: {message}; [Caller Member Name]: {callerMemberName}; ");
+        }
+
         private static void Log(string message)
         {
             //you see this messages on output windows. if not, right click on that window and chech 'Program Output'

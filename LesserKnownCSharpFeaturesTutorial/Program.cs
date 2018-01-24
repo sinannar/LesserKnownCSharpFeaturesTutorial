@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using CallerInfoExample;
 /*
     In this tutorial, I am following this tutorials
-    ->    https://ankitvijay.net/2018/01/08/lesser-known-c-features-part-1/
-
+    ->      https://ankitvijay.net/2018/01/08/lesser-known-c-features-part-1/
+    ->      https://ankitvijay.net/2018/01/11/lesser-known-c-features-part-2/
      */
 
 namespace LesserKnownCSharpFeaturesTutorial
@@ -25,6 +25,11 @@ namespace LesserKnownCSharpFeaturesTutorial
 
 
             Logger.Log("Testing logging inside Main() method");
+
+#pragma warning disable CS0618 // Type or member is obsolete
+            Logger.Log("Testing logging inside Main() method","Main");
+#pragma warning restore CS0618 // Type or member is obsolete
+
         }
 
 
